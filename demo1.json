@@ -1,0 +1,18 @@
+{
+	"AWSTemplateFormatVersion": "2010-09-09",
+	"Description": "AWS Sample Template-EC2Instance",
+	"Resources": {
+		"AWSEc2Instance": {
+			"Type": "AWS::EC2::Instance",
+			"Properties": {
+				"ImageId": "ami-0c4f7023847b90238",
+				"InstanceType": "t2.micro",
+				"SubnetId": "subnet-062ff8946ceeb6d00",
+				"SecurityGroupIds": ["sg-015d768375b69a1af"],
+				"KeyName": "cloudNV"
+				
+			}
+
+		}
+	}
+}
